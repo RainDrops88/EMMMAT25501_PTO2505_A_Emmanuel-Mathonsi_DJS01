@@ -1,0 +1,51 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1d1d3;
+}
+.header {
+    background-color: #c4bafa;
+    color: #030303;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.2rem;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.search-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#logo {
+    width: 35px;
+    height: 35px;
+}
+
+.main-layout {
+    display: flex;
+    padding: 1.2rem;
+    gap: 20px;
+}
+.filters {
+    display: flex ;
+    gap: 1rem;
+}
+
+#genres {
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+}
+
+#sort-by {
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+}
