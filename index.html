@@ -4,14 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./icons/podcast icon.webp"
+    />
     <title>Podcast</title>
 </head>
 <body>
     <div id="layout">
         <header id="header" class="header">
+            <div class="logo-title">
+            <img  id="logo" src="./icons/podcast icon.webp" alt="Podcast Icon" />
             <h1>PodcastApp</h1>
+            </div>
+            <div class="search-profile">
             <div id="search-bar">🔍</div>
             <div id="profile">🧑</div>
+            </div>
         </header>
         <main id="main-layout" class="main-layout">
             <section id="filter" class="filters">
@@ -29,6 +40,10 @@
                     <option value="most-popular">Most Popular</option>
                     <option value="newest">Newest</option>
             </section>
+            <section id="podcast-cards" class="podcast-cards">
+                <!-- Podcast cards will be dynamically inserted here -->
+            </section>
+            
         </main>
     </div>
 </body>
