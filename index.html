@@ -10,6 +10,7 @@
       sizes="32x32"
       href="./icons/podcast icon.webp"
     />
+    <script defer src="./scripts/main.js" type="module"></script>
     <title>Podcast</title>
 </head>
 <body>
@@ -42,27 +43,22 @@
                 </select>
             </div>
             <div id="podcast-cards" class="podcast-cards">
-                 <div class="podcast-card">
-                    <img src="" alt="Podcast 1" class="podcast-image">
-                    <h3 class="podcast-title">Podcast Title</h3>
-                    <p class="seasons">📁 (<span class="season-count">10</span>) seasons</p>
-                    <div class="title-genres">Business</div>
-                    <p class="updated-date"> updated 2 days ago</p>
-
-                 </div>
+                <!-- Podcast cards will be dynamically inserted here -->
             </div>
-            <div id="podcast-modal" class="modal">
+            <dialog id="podcast-modal" class="modal">
                 <div class="modal-section">
                     <div class="modal-header">
-                        <h2>Podcast title</h2>
-                        <span id="close-modal" class="close-modal">×</span>
+                        <h2 class="modal-title">Podcast title</h2>
+                        <div id="close-modal" class="close-modal">×</div>
                     </div>
                     <div class="modal-description">
                         <img src="" alt="Podcast Image" class="modal-podcast-image">
                         <div class="modal-podcast-info">
                             <div class="podcast-desc">
                                 <h4 class="modal-podcast-description">Description</h4>
-                                <p class="title-description"></p>
+                                <p class="title-description">Something Was Wrong is an Iris Award-winning true-crime
+                                     docuseries about the discovery,
+                                     trauma, and recovery from shocking life events and abusive relationships.</p>
                             </div>
                             <div class="podcast-genres">
                                 <div class="modal-genres">Genres</div>
@@ -80,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </dialog>
 
         </main>
     </div>
