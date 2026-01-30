@@ -1,5 +1,6 @@
 // @ts-check
 import { createModal} from "./modal.js";
+import { genre } from "../utils/genre.js";
 
     /**
      * Creates a podcast card element.
@@ -23,7 +24,7 @@ export function createPodcastCard(podcast) {
         <div class="podcast-info">
             <h3 class="podcast-title">${podcast.title}</h3>
             <p class="podcast-seasons">📁 ${podcast.seasons} seasons</p>
-            <p class="podcast-genres">${podcast.genres}</p>
+            <p class="podcast-genres">${genre.getGenreNames(podcast.genres).join(', ')}</p>
             <p class="podcast-updated">Last Updated: ${podcast.updated}</p>
         </div>
     `;
