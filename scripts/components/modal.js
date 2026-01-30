@@ -1,5 +1,8 @@
 
 // @ts-check
+
+
+import { genre } from '../utils/genre.js';
 /**
  * Opens the podcast detail modal with the provided podcast data.
  */
@@ -21,7 +24,7 @@ export function createModal(podcast) {
                     <p class="title-description">${podcast.description}</p>
                     <div class="modal-genres">
                         <h3>Genres</h3>
-                        ${podcast.genres.map(genre => `<span class="genre">${genre}</span>`).join('')}
+                        <p>${genre.getGenreNames(podcast.genres).join(', ')}</p>
                     </div>
                     <p>Last Updated: ${podcast.updated}</p>
                 </div>
