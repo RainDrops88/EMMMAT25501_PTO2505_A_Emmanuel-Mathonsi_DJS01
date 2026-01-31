@@ -1,6 +1,7 @@
 // @ts-check
 import { createModal} from "./modal.js";
 import { genre } from "../utils/genre.js";
+import { dates } from "../utils/dateConverter.js";
 
     /**
      * Creates a podcast card element.
@@ -25,7 +26,7 @@ export function createPodcastCard(podcast) {
             <h3 class="podcast-title">${podcast.title}</h3>
             <p class="podcast-seasons">📁 ${podcast.seasons} seasons</p>
             <p class="podcast-genres">${genre.getGenreNames(podcast.genres).join(', ')}</p>
-            <p class="podcast-updated">Last Updated: ${podcast.updated}</p>
+            <p class="podcast-updated">Last Updated: ${dates.formatDate(podcast.updated)}</p>
         </div>
     `;
     card.addEventListener('click', () => {
