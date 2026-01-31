@@ -52,7 +52,9 @@ export function createModal(podcast) {
 
     document.body.appendChild(modal);
     const closeModalButton = modal.querySelector('.close-modal');
-    closeModalButton.addEventListener('click', () => {
+    closeModalButton.addEventListener('click', (event) => {
+        event.preventDefault();  // Prevent page reload 
+        // if button is inside a form or has default behavior
         modal.close();
         document.body.removeChild(modal);
     });

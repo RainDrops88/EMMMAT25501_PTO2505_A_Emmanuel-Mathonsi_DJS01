@@ -31,7 +31,8 @@ export function createPodcastCard(podcast) {
             <p class="podcast-updated">Last Updated: ${dates.formatDate(podcast.updated)}</p>
         </div>
     `;
-    card.addEventListener('click', () => {
+    card.addEventListener('click', (event) => {
+        event.preventDefault();
         createModal(podcast);
     });
     return card;
