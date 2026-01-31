@@ -33,7 +33,7 @@ export function createModal(podcast) {
                 <h3>Seasons</h3>
             </div>
             <div class="seasons-list">
-               
+               // Seasons will be dynamically inserted here
             </div>
             
         </div>
