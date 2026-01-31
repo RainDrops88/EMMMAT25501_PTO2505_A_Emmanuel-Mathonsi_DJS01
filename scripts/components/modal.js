@@ -1,6 +1,6 @@
 
 // @ts-check
-
+import { seasonCard } from '../utils/render.js';
 import { dates } from '../utils/dateConverter.js';
 import { genre } from '../utils/genre.js';
 /**
@@ -30,12 +30,15 @@ export function createModal(podcast) {
                 </div>
             </div>
             <div class="seasons-info">
-                <p>📁 ${podcast.seasons} seasons</p>
-                
+                <h3>Seasons</h3>
+            </div>
+            <div class="seasons-list">
+                ${seasonCard.createSeasonCard(podcast.seasons).innerHTML}
             </div>
             
         </div>
     `;
+
     document.body.appendChild(modal);
     const closeModalButton = modal.querySelector('.close-modal');
     closeModalButton.addEventListener('click', () => {
