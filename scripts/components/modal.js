@@ -3,7 +3,8 @@
 
 import { dates } from '../utils/dateConverter.js';
 import { genre } from '../utils/genre.js';
-import { seasons } from '../utils/render.js';
+import { seasons } from '../utils/season.js';
+
 /**
  * Opens the podcast detail modal with the provided podcast data.
  */
@@ -37,9 +38,13 @@ export function createModal(podcast) {
             
                 <div class="seasons-list">
                     ${seasons.getSeasonsList(podcast.id).map(seasonTitle => `
-                        <div class="season-item"><p>${seasonTitle}</p></div>
+                        <div class="season-item"><p>${seasonTitle.title}</p>
+                        <p> ${seasonTitle.episodes} Episodes </p>
+                        </div>
                     `).join('')}
+                    
                 </div>
+
             </div>
             
         </div>
