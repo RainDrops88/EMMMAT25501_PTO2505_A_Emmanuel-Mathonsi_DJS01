@@ -1,5 +1,5 @@
 // @ts-check
-import { createModal} from "./components/modal.js";
+
 import { podcasts } from "./data.js";
 import { createPodcastCard } from "./components/podcastCard.js";
 
@@ -17,8 +17,6 @@ export function renderPodcastCards() {
     
 
 }
-
-
 
 
 // Initial rendering of podcast cards
