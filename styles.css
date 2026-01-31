@@ -188,6 +188,26 @@ body {
 .season-item p {
     margin: 0;
 }
+/****** Responsive Styles ******/
+
+/****** Tablet ********/
+@media screen and (max-width: 1025px) {
+    .podcast-card{
+        width: 45%;
+    }
+    .modal {
+        left: 5%;
+    }
+    .modal-section {
+       
+        width: 90%;
+    }
+    .modal-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 /******** Mobile ********/
 @media screen and (max-width: 576px) {
