@@ -1,7 +1,7 @@
 
 // @ts-check
 
-
+import { dates } from '../utils/dateConverter.js';
 import { genre } from '../utils/genre.js';
 /**
  * Opens the podcast detail modal with the provided podcast data.
@@ -24,15 +24,16 @@ export function createModal(podcast) {
                     <p class="title-description">${podcast.description}</p>
                     <div class="modal-genres">
                         <h3>Genres</h3>
-                        <p>${genre.getGenreNames(podcast.genres).join(', ')}</p>
+                        <p class="podcast-genres">${genre.getGenreNames(podcast.genres).join(', ')}</p>
                     </div>
-                    <p>Last Updated: ${podcast.updated}</p>
+                    <p>Last Updated: ${dates.formatDate(podcast.updated)}</p>
                 </div>
             </div>
             <div class="seasons-info">
                 <p>📁 ${podcast.seasons} seasons</p>
                 
             </div>
+            
         </div>
     `;
     document.body.appendChild(modal);
