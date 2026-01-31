@@ -8,7 +8,7 @@ body {
     background-color: #d1d1d3;
 }
 .header {
-    background-color: #c4bafa;
+    background-color: #e0bce8;
     color: #030303;
     padding: 10px 0;
     display: flex;
@@ -69,8 +69,9 @@ body {
     background-color: #f5f5f5;
     border-radius: 8px;
     padding: 10px;
-    width: 200px;
+    width: 18rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .modal {
@@ -116,12 +117,11 @@ body {
     cursor: pointer;
 }
 
-.modal-description {
+.modal-content {
     display: flex;
     padding: 1rem;
     gap: 1rem;
     overflow-y: auto;
-    height: 16rem;
 }
 
 .modal-podcast-image {
@@ -143,4 +143,21 @@ body {
 
 .podcast-genres {
     margin-top: 1rem;
+    display: inline-block;
+    background-color: #c4bafa;
+    color: #030303;
+    padding: 0.3rem 0.6rem;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.genre {
+    display: inline-block;
+    background-color: #c4bafa;
+    color: #030303;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
