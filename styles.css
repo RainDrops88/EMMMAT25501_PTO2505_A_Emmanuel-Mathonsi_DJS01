@@ -1,14 +1,14 @@
-
+/****** Global Styles ******/
 body {
     font-family: Arial, sans-serif;
     width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: #d1d1d3;
+    background-color: #ababb0;
 }
 .header {
-    background-color: #e0bce8;
+    background-color: #7b797c;
     color: #030303;
     padding: 10px 0;
     display: flex;
@@ -43,6 +43,7 @@ body {
     gap: 1rem;
 }
 
+/****** Podcast Card Style ******/
 #genres {
     padding: 0.3rem 0.5rem;
     border-radius: 5px;
@@ -74,6 +75,7 @@ body {
     cursor: pointer;
 }
 
+/****** Modal Styles ******/
 .modal {
     position: fixed;
     top: 0;
@@ -92,7 +94,7 @@ body {
 .modal-section {
     max-width: 65rem;
     width: 80%;
-    background-color: rgb(179, 178, 178);
+    background-color: rgb(249, 246, 246);
     display: flex;
     flex-direction: column;
     border-radius: 10px;
@@ -129,7 +131,7 @@ body {
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    background-color: violet;
+    background-color: rgba(130, 129, 130, 0.731);
 }
 
 
@@ -141,8 +143,8 @@ body {
 .podcast-genres {
     margin-top: 1rem;
     display: inline-block;
-    background-color: #c4bafa;
-    color: #030303;
+    background-color: #a9a9ac;
+    color: #f8f6f6;
     padding: 0.3rem 0.6rem;
     border-radius: 15px;
     margin-right: 5px;
@@ -151,15 +153,16 @@ body {
 
 .genre {
     display: inline-block;
-    background-color: #c4bafa;
-    color: #030303;
+    background-color: #b6b5b9;
+    color: #504f51;
     font-size: 0.7rem;
-    padding: 0.4rem 0.8rem;
+    padding: 0.4rem 0.5rem;
     border-radius: 1rem;
-    margin-right: 0.4rem;
-    margin-bottom: 0.4rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0.2rem;
 }
 
+/******* Seasons List *******/
 .seasons-info {
     padding: 0 1rem 1rem 1rem ;
 }
@@ -173,7 +176,7 @@ body {
 }
 
 .season-item {
-    background-color: #aaa8b6;
+    background-color: #aaa8b6b3;
     height: 2rem;
     color: #3f3d3d;
     display: flex;
