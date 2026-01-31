@@ -1,6 +1,6 @@
 
 // @ts-check
-import { seasonCard } from '../utils/render.js';
+
 import { dates } from '../utils/dateConverter.js';
 import { genre } from '../utils/genre.js';
 /**
@@ -33,7 +33,7 @@ export function createModal(podcast) {
                 <h3>Seasons</h3>
             </div>
             <div class="seasons-list">
-                ${seasonCard.createSeasonCard(podcast.seasons).innerHTML}
+               
             </div>
             
         </div>
