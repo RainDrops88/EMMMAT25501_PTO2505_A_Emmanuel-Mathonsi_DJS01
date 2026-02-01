@@ -6,7 +6,10 @@ import { createPodcastCard } from "./components/podcastCard.js";
 
 const podcastCardsContainer = document.getElementById('podcast-cards');
 
-// Function to render podcast cards
+/**
+ * Renders all podcast cards into the podcast cards container and modal.
+ * 
+ */
 export function renderPodcastCards() {
     if (!podcastCardsContainer) return;
     podcastCardsContainer.innerHTML = '';

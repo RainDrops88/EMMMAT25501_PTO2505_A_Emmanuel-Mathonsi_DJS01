@@ -10,7 +10,7 @@ import { dates } from "../utils/dateConverter.js";
      * @param {string} podcast.image - The URL of the podcast image.
      * @param {string} podcast.title - The title of the podcast.
      * @param {number[]} podcast.seasons - The number of seasons on the podcast.
-     * @param {number[]} podcast.genres - The genres of the podcast.
+     * @param {string[]} podcast.genres - The genres of the podcast.
      * @param {string} podcast.updated - The last updated date of the podcast.
      * @returns {HTMLElement} The podcast card element.
      */

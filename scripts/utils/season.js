@@ -1,5 +1,10 @@
 import { seasons as seasonsData } from '../data.js';
 
+/**
+ * Utility functions for season handling.
+ * @module seasons
+ * 
+ */
 export const seasons = {
   getSeasonsList(showId) {
     const matched = seasonsData.find(s => s.id === showId);

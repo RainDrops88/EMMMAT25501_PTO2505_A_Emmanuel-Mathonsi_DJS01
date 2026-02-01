@@ -7,6 +7,17 @@ import { seasons } from '../utils/season.js';
 
 /**
  * Opens the podcast detail modal with the provided podcast data.
+ * @param {Object} podcast - The podcast data object.
+ * @param {string} podcast.title - The title of the podcast.
+ * @param {string} podcast.image - The URL of the podcast image.
+ * @param {string} podcast.description - The description of the podcast.
+ * @param {Array<number>} podcast.genres - The array of genre IDs.
+ * @param {string} podcast.updated - The last updated date of the podcast.
+ * @param {number} podcast.id - The unique identifier of the podcast.
+ * @param {Array<Object>} podcast.seasons - The array of seasons for the podcast.
+ * @param {string} podcast.seasons[].title - The title of the season.
+ * @param {number} podcast.seasons[].episodes - The number of episodes in the season.
+ * @returns {HTMLElement} The created modal element.
  */
 
 export function createModal(podcast) {
