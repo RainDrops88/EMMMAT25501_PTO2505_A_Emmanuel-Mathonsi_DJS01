@@ -48,8 +48,8 @@ export function createModal(podcast) {
                 <h3>Seasons</h3>
             
                 <div class="seasons-list">
-                    ${seasons.getSeasonsList(podcast.id).map(seasonTitle => `
-                        <div class="season-item"><p>${seasonTitle.title}</p>
+                    ${seasons.getSeasonsList(podcast.id).map((seasonTitle, index) => `
+                        <div class="season-item"><p>Season ${index + 1}: ${seasonTitle.title}</p>
                         <p> ${seasonTitle.episodes} Episodes </p>
                         </div>
                     `).join('')}
